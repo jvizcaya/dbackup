@@ -1,0 +1,28 @@
+{
+    "name": "jvizcaya/dbackup",
+    "description": "Create database backup (Only MySQL/MariaDB).",
+    "keywords": ["laravel", "model", "backup", "mysql"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jorge Vizcaya",
+            "email": "jorgevizcayaa@gmail.com"
+        }
+    ],
+    "require": {
+      "php": "^7.1.3"
+    },
+    "autoload": {
+       "psr-4": {
+           "Jvizcaya\\Dbackup\\": "src/"
+       }
+   },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "Jvizcaya\\Dbackup\\DbackupServiceProvider"
+        ]
+      }
+    },
+    "minimum-stability": "dev"
+}
